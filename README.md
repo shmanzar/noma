@@ -1,4 +1,4 @@
 # Noma
-## A silent auto-downloader for the measles datapacks
+## A silent auto-downloader for the multiple PDF datapacks which were generated for healthworkers for each region
 
-Work-in-progress
+A selenium-based bot
