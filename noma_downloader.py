@@ -1,3 +1,5 @@
+## I have removed the authorisations and specific links due to government regulations on healthcare data and personal bindings to NDAs
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select, WebDriverWait
 import os, shutil, time
@@ -9,10 +11,10 @@ year = str(input("Please enter the Year (YYYY): \n"))
 print("\n"+year)
 
 #credentials 
-login_url = "http://www.monitoring.punjab.gov.pk/guest"
-continue_link = "http://www.monitoring.punjab.gov.pk/evaccs/setting/list_measles_datapack"
+login_url = "CLIENT_LINK"
+continue_link = "CLIENT_LINK_list_measles_datapack"
 
-user, password = 'evaccs_visitors@pitb.gov.pk', 'evaccs_visitors'
+user, password = 'CLIENT_USERNAME', 'CLIENT_PASSWORD'
 
 #set download folder on desktop
 download_path = os.path.expanduser('~/Desktop/Measles_Datapacks/')
@@ -61,14 +63,6 @@ def change_date(m,y):
     pass
 
 change_date(month,year)
-
-
-
-# for district in optionsList:
-#     district_drop = browser.find_element_by_xpath(f'//*[@id="filter_district"]/option[{district+1}]').click()
-#     downloader_btn = browser.find_element_by_css_selector("#print > button")
-#     downloader_btn.click()
-#     browser.implicitly_wait(3)
 
 filter_btn = browser.find_element_by_xpath('/html/body/div/div/section/div/div[1]/div/form/div/div[3]/button')
 filter_btn.click()
